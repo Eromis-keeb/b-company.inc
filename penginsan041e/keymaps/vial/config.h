@@ -22,7 +22,7 @@
 /* #define MATRIX_ROWS 4 */
 /* #define MATRIX_COLS 12 */
 
-#define VIAL_KEYBOARD_UID {0xE1, 0x16, 0xB8, 0xB7, 0x8A, 0x96, 0xAF, 0x16}
+#define VIAL_KEYBOARD_UID {0x17, 0x5C, 0xFB, 0x13, 0xA9, 0xDF, 0x37, 0x58}
 #define VIAL_UNLOCK_COMBO_ROWS {0,0}
 #define VIAL_UNLOCK_COMBO_COLS {0,1}
 
@@ -58,8 +58,8 @@
 // #define PIMORONI_TRACKBALL_ADDRESS_0x14
 
 #define I2C_DRIVER I2CD0
-#define I2C1_SCL_PIN GP6 
-#define I2C1_SDA_PIN GP5 
+#define I2C1_SCL_PIN GP13
+#define I2C1_SDA_PIN GP12
 
 #define POINTING_DEVICE_ROTATION_90
 

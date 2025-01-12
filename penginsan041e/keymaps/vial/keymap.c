@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void keyboard_post_init_user(void) {
 	rgb_matrix_enable();
-        /* rgb_matrix_mode(RGB_MATRIX_RAINBOW_MOVING_CHEVRON); */
+        rgb_matrix_mode(RGB_MATRIX_RAINBOW_MOVING_CHEVRON);
 }
 
 
@@ -90,7 +90,7 @@ bool rgb_matrix_indicators_user(void) {
 
        case _lower:
             /* rgb_matrix_mode(RGB_MATRIX_JELLYBEAN_RAINDROPS); */
-	    for (int i = 3; i <= 7; i++) {
+	    for (int i = 2; i <= 6; i++) {
 		    rgb_matrix_set_color(i,RGB_GREEN);
 	    }
             /* rgb_matrix_set_color(8,RGB_GREEN); */
@@ -99,7 +99,7 @@ bool rgb_matrix_indicators_user(void) {
 	    
        case _raise:
             /* rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR); */
-            for (int i = 3; i <= 7; i++) {
+            for (int i = 2; i <= 6; i++) {
 		    rgb_matrix_set_color(i,RGB_BLUE);
 	    }
 	    /* rgb_matrix_set_color(8,RGB_BLUE); */
@@ -109,7 +109,7 @@ bool rgb_matrix_indicators_user(void) {
        case _upper:
             /* rgb_matrix_mode_noeeprom(RGB_MATRIX_BREATHING); */
 	    /* rgb_matrix_set_color_all(RGB_YELLOW); */
-	    for (int i = 3; i <= 7; i++) {
+	    for (int i = 2; i <= 6; i++) {
 		    rgb_matrix_set_color(i,RGB_YELLOW);
 	    }
 
@@ -118,6 +118,7 @@ bool rgb_matrix_indicators_user(void) {
             break;
 
        /* default: */
+	    /* rgb_matrix_reload_from_eeprom(); */
 	    /* rgb_matrix_mode(RGB_MATRIX_RAINBOW_MOVING_CHEVRON); */
 	    /* break; */
 
